@@ -6,18 +6,10 @@ const headerHamMenuCloseBtn = document.querySelector('.header__main-ham-menu-clo
 const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link');
 
 hamMenuBtn.addEventListener('click', () => {
-  if (smallMenu.classList.contains('header__sm-menu--active')) {
-    smallMenu.classList.remove('header__sm-menu--active');
-  } else {
-    smallMenu.classList.add('header__sm-menu--active');
-  }
-  if (headerHamMenuBtn.classList.contains('d-none')) {
-    headerHamMenuBtn.classList.remove('d-none');
-    headerHamMenuCloseBtn.classList.add('d-none');
-  } else {
-    headerHamMenuBtn.classList.add('d-none')
-    headerHamMenuCloseBtn.classList.remove('d-none');
-  }
+
+  smallMenu.classList.toggle('header__sm-menu--active');
+  headerHamMenuBtn.classList.toggle("d-none");
+  headerHamMenuCloseBtn.classList.toggle('d-none');
 })
 
 for (let i = 0; i < headerSmallMenuLinks.length; i++) {
