@@ -280,11 +280,12 @@ textarea {
       height: unset;
       min-height: unset; } }
   .home-hero__sai-kumar{
-    margin: 0 2rem 0 8rem;}
+    margin: 0 2rem 0 9rem;}
     .home-hero__sai-kumar .hero-img{
         max-width: 30rem;
         max-height: 60rem;
         object-fit: cover;
+        filter: drop-shadow(-.9rem .6rem 0 #000);
         transition: transform 0.3s, filter 0.3s;}
       .home-hero__sai-kumar .hero-img:hover{
         transform: translate(.9rem,-.6rem);
