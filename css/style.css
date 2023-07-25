@@ -5,9 +5,7 @@
   src: url(source.ttf);
 }  */
 
-*,
-::after,
-::before{
+*{
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -23,13 +21,10 @@ html {
     html {
       font-size: 65%; } }
 
-
 body {
   box-sizing: border-box;
   position: relative;
   line-height: 1.5;
-  overflow-x: hidden;
-  overflow-y: scroll;
   font-family: Source Sans Pro, sans-serif;
   user-select: none;
 }
@@ -289,7 +284,7 @@ textarea {
         transition: transform 0.3s, filter 0.3s;}
       .home-hero__sai-kumar .hero-img:hover{
         transform: translate(.9rem,-.6rem);
-        filter: drop-shadow(-.9rem .6rem 0 #000);}
+        filter: drop-shadow(-1.5rem 1rem 0 #000);}
       @media only screen and (max-width: 55em) {
         .home-hero__sai-kumar{
           margin: 0 2rem 0 4rem;

@@ -6,7 +6,6 @@ const headerHamMenuCloseBtn = document.querySelector('.header__main-ham-menu-clo
 const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link');
 
 hamMenuBtn.addEventListener('click', () => {
-
   smallMenu.classList.toggle('header__sm-menu--active');
   headerHamMenuBtn.classList.toggle("d-none");
   headerHamMenuCloseBtn.classList.toggle('d-none');
